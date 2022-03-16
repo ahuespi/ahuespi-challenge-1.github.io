@@ -1,0 +1,45 @@
+input {
+    width: 100%;
+    padding: 10px;
+}
+
+body {
+    padding: 20px;
+}
+
+#buyCoin {
+    width: 100%;
+}
+
+#formContacto .alert {
+    opacity: 0;
+    margin-top: 10px;
+}
+
+#formContacto div {
+    margin: 10px 0;
+}
+
+.avg-price.negative {
+    color: red;
+}
+
+.avg-price {
+    color: green;
+}
+
+.prices {
+    display: flex;
+    justify-content: space-around;
+}
+
+.prices label {
+    font-weight: bold;
+}
+
+@media (min-width: 769px) {
+    body {
+        margin: 0 auto;
+        width: 70%;
+    }
+}
