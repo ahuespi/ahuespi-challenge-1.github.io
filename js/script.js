@@ -149,48 +149,9 @@ let createRowInfo = (values) => {
         });
 }
 
-/* let getMyCriptos = () => {
-    let allCriptos = allStorage()
-    let criptos = {}
-    let myCriptos = document.getElementById('myCriptos')
-
-    allCriptos.map(i => {
-        let c = JSON.parse(i)
-
-        if (!criptos.hasOwnProperty(c.coin)) {
-            criptos[c.coin] = c
-        } else {
-            let objQuantity = parseInt(criptos[c.coin].quantity)
-            let newObjQuantity = parseInt(c.quantity)
-            let sum = objQuantity + newObjQuantity
-            criptos[c.coin].quantity = sum
-
-            let objTotalBuyed = criptos[c.coin].totalBuyed
-            let newObjTotalBuyed = c.totalBuyed
-            let sumTotal = objTotalBuyed + newObjTotalBuyed
-            criptos[c.coin].totalBuyed = sumTotal
-        }
-
-    })
-
-    for (const key in criptos) {
-        if (Object.hasOwnProperty.call(criptos, key)) {
-            const element = criptos[key];
-            myCriptos.innerHTML +=
-                `<tr>
-                    <td>${element.coin}</td>
-                    <td>$ ${element.quantity}</td>
-                    <td>$ ${element.currentPrice}</td>
-                    <td>${element.totalBuyed} ${element.coin}<td>
-                </tr>`
-        }
-    }
-} */
-
 setInterval(() => {
     allStorage()
 }, 60000);
 
 createCriptoSelect()
 allStorage()
-// getMyCriptos()
